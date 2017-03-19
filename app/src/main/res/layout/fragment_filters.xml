@@ -29,16 +29,15 @@
             android:layout_alignParentRight="true" />
 
         <ScrollView
-            android:layout_width="fill_parent"
-            android:layout_height="fill_parent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:scrollbars="none"
-            android:layout_weight="1"
             android:layout_below="@+id/tvTitle"
             android:layout_above="@+id/btnSave">
 
             <TableLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
+                android:layout_height="wrap_content">
 
                 <TableRow
                     android:layout_width="match_parent"
@@ -114,7 +113,8 @@
                 </TableRow>
                 <TableRow
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content" >
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp">
                     <TextView
                         android:text="Sort Order"
                         android:layout_width="wrap_content"

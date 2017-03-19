@@ -85,16 +85,16 @@ public class FiltersDialogFragment extends AppCompatDialogFragment {
         if (mFilters != null) {
             if (mFilters.getDeskValues() != null) {
                 for (String deskValue : mFilters.getDeskValues()) {
-                    if (deskValue.equals("arts")) {
+                    if (deskValue.equals("Arts")) {
                         binding.cbArts.setChecked(true);
                     }
-                    if (deskValue.equals("fashion")) {
+                    if (deskValue.equals("Fashion")) {
                         binding.cbFashion.setChecked(true);
                     }
-                    if (deskValue.equals("sports")) {
+                    if (deskValue.equals("Sports")) {
                         binding.cbSports.setChecked(true);
                     }
-                    if (deskValue.equals("style")) {
+                    if (deskValue.equals("Style")) {
                         binding.cbStyle.setChecked(true);
                     }
                 }
@@ -137,16 +137,16 @@ public class FiltersDialogFragment extends AppCompatDialogFragment {
     public void onSave() {
         ArrayList<String> deskValueArray = new ArrayList<>();
         if (binding.cbArts.isChecked()) {
-            deskValueArray.add("arts");
+            deskValueArray.add("Arts");
         }
         if (binding.cbFashion.isChecked()) {
-            deskValueArray.add("fashion");
+            deskValueArray.add("Fashion");
         }
         if (binding.cbSports.isChecked()) {
-            deskValueArray.add("sports");
+            deskValueArray.add("Sports");
         }
         if (binding.cbStyle.isChecked()) {
-            deskValueArray.add("style");
+            deskValueArray.add("Style");
         }
 
         int day = binding.dpBeginDate.getDayOfMonth();
